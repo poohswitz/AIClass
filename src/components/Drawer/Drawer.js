@@ -50,7 +50,7 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Feature1", "Feature2", "Feature3", "Feature4"].map((text, index) => (
+        {["Lesson Planner"].map((text, index) => (
           <ListItem button key={text}>
             {/* <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -61,7 +61,7 @@ export default function SwipeableTemporaryDrawer() {
       </List>
       <Divider />
       <List>
-        {["Feature5", "Feature6", "Feature7"].map((text, index) => (
+        {["Diagram Generator"].map((text, index) => (
           <ListItem button key={text}>
             {/* <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
