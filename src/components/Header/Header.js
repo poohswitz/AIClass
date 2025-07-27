@@ -20,12 +20,8 @@ const Header = ({ children }) => {
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
 
-  const {
-    setCreateClassDialog,
-    setJoinClassDialog,
-    loggedInUser,
-    logout,
-  } = useLocalContext();
+  const { setCreateClassDialog, setJoinClassDialog, loggedInUser, logout } =
+    useLocalContext();
 
   const handleCreate = () => {
     handleClose();
@@ -42,12 +38,12 @@ const Header = ({ children }) => {
         <Toolbar className={classes.toolbar}>
           <div className={classes.headerWrapper}>
             {children}
-            <img
+            {/* <img
               src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
               alt="Classroom"
-            />
+            /> */}
             <Typography variant="h6" className={classes.title}>
-              Classroom
+              AI Classroom
             </Typography>
           </div>
           <div className={classes.header__wrapper__right}>
